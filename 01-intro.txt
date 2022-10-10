@@ -1,0 +1,26 @@
+Objetivo: Preparación de un Cafe
+
+Pasos para prepara un cafe:
+ENTRADA
+1.- Definir que tipo de cafe vamos a elaborar
+2.- Tener la receta del tipo de cafe
+3.- Reunir los ingredientes
+4.- Reunir los utencilios
+
+PROCESO
+5.- Prepar el cafe de acuerdo a la receta
+
+SALIDA
+6.- El cafe preparado
+
+1. Analisis
+2. Diseño
+3. Desarrollo
+4. Pruebas
+5. Implementacion
+6. Mantenimiento
+
+1. Entradas
+2. Proceso
+3. Salida
+

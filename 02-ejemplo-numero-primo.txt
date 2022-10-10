@@ -1,0 +1,66 @@
+
+ENTRADA - PROCESO - SALIDA
+
+Definir el Problema:
+Realizar una programa que nos diga si un numero es primo o no.
+
+ENTRADA
+- EL numero
+
+PROCESO
+(Manualmente como calculamos un numero primo) ????
+
+Teoria 1: El numero solo es divisible entre 1 y si mismo.
+
+Pensando.....
+
+  Ejemplo 5
+  Rango entre el 1 y el numero ( 5 )
+  1, 2, 3, 4, 5
+  Rango: 2,3,4
+  Si al dividir el 5 entre los numero del rango nos da cero como
+  residuo en alguno de los numero... el numero no es primo
+
+  En caso contrario, si despues de dividir el numero entre el
+  rango y ninguno dio como residuo cero, el numero dado si es primo
+
+
+
+
+SALIDA
+- si (VERDADERO)
+- no (FALSO)
+
+
+
+
+1. Obtener el numero
+2. Determinar el rango
+3. Dividir todos los numeros del rango entre el numero
+4. Verificar el resultado
+    4.1 Si el residuo de la division es CERO, entonces no es primo
+    4.2 Si el residuo es distinto a CERO, entonces pasar al siguiente
+        numero del rango
+5. Una vez terminado la division de todos los numeros regresar
+  el resultado
+
+  1. 5
+  2. 2, 3, 4
+  3 y 4. 5/2 = 2 y sobra 1
+         5/3 = 1 y sobra 2
+         5/4 = 1 y sobra 1
+  5. 5 SI es numero primo (VERDADERO).
+
+
+FUNCION EN JAVASCRIPT
+
+
+function esPrimo( numero ) {
+  for( let rango=2; rango < numero; rango++ ) {
+    let resultado = numero % rango;
+    if( resultado === 0 ) return false
+  }
+  return true
+}
+
+esPrimo(15)
