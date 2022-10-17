@@ -1,0 +1,109 @@
+
+Definiendo el objetivo del algoritmo.
+
+Dada una serie de calificaciones calcular el promedio y
+determinar si un alumno aprueba o no.
+Nota: La calificacion minima aprobatoria es de 70.
+
+ENTRADA
+- calificaciones
+- calificacion minima aprobatoria es de 70
+
+PROCESO
+- calcular el promedio
+- verificar si el promedio es mayor o menor a la calificacion minima aprobatoria (CMA)
+
+SALIDA
+- aprobatoria
+- no aprobatoria
+
+
+ANALISIS DE CÓMO SE REALIZA DE FORMA MANUAL
+
+1) Obtener las calificaciones
+   Ej. 70, 100, 60
+
+2) Calcular el promedio
+   Ej. (70 + 100 + 60) / 3  <--- tomar en cuenta la jerarquia de los operadores
+       promedio = 76.66
+
+3) Verificar si el promedio es mayor o menor que la CMA
+   Ej. SI el promedio es mayor o igual a CMA entonces el alumno si aprobo
+       EN CASO CONTRARIO el alumno no aprobo
+
+
+PSEUDOCODIGO
+
+calif1 = 70
+calif2 = 100
+calif3 = 60
+total_de_calif = 3
+CMA = 70
+
+promedio = (calif1 + calif2 + calif3) / 3
+
+SI ( promedio >= CMA ) ENTONCES
+  resultado = El alumno si aprobo
+SINO
+  resultado = El alumno no aprobo
+
+Visualizar el resultado
+
+JAVASCRIPT (Codificacion)
+
+const calif1 = 70;
+const calif2 = 100;
+const calif3 = 60;
+const TDC = 3;
+const CMA = 70;
+let resultado;
+
+const promedio = (calif1 + calif2 + calif3) / TDC;
+
+if ( promedio >= CMA ) {
+  resultado = "El alumno si aprobo";
+}
+else {
+  resultado = "El alumno no aprobo";
+}
+
+console.log(resultado);
+
+
+80 100 70
+
+i = 0
+a[i] = 80
+promedio = 80 / i + 1 = 80
+
+i = 1
+a[i] = 100
+promedio = (promedio + 100) / i + 1 = 90
+
+i = 2
+a[i] = 70
+promedio = (90 + 70) / 2
+
+// RECORRIDO DE UN ARREGLO
+
+/*
+
+const a = [100, 80, 90, 70 ];
+
+for( let i = 0; i < a.length; i++) {
+  console.log(a[i]);
+}
+
+for( let i in a ) {
+  console.log(a[i]);
+}
+
+for( let numero of a ) {
+  console.log(numero)
+}
+
+a.forEach( n => console.log(n));
+
+const resultado = a.map( n => console.log(n));
+
+*/
