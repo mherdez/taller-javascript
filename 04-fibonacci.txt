@@ -1,0 +1,33 @@
+
+
+     n1  n2  r
+ 0   1   1   2   3   5   8   13  21  33  54  87
+
+repetir hasta que r >= 100
+ n1 = 0
+ n2 = 1
+  r = n1 + n2
+ n1 = n2
+ n2 = r
+ r  = n1 + n2
+
+
+// Fibonacci de 0 y 1 hasta el 100
+// variable 1 y 2
+// suma de las 2 variables
+
+/*
+ Vamos a repetir el siguiente proceso hasta llegar al 100
+ asignar variables
+ n1 = 0
+ n2 = 1
+ suma = n1 + n2
+ visualizar n1, n2, suma
+
+ reasignacion de variables
+ n1 = n2
+ n2 = suma
+ suma = n1 + n2
+ */
+
+
