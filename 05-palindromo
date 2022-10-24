@@ -1,0 +1,36 @@
+
+// Realizar una funcion que compruebe si una palabra es palidromo
+
+
+function esPalindromo( palabra ) {
+  let palabraOriginal = '';
+
+  for( let i = 0; i < palabra.length; i++) {
+  	if( palabra[i] != ' ') {
+      palabraOriginal = palabraOriginal + palabra[i];
+    }
+	}
+
+	let nuevaPalabra = '';
+	for( let i = palabra.length - 1; i >= 0; i--) {
+  	if( palabra[i] != ' ') {
+      nuevaPalabra = nuevaPalabra + palabra[i];
+    }
+	}
+
+  return palabraOriginal == nuevaPalabra
+}
+
+esPalindromo('arroz a la zorra')
+
+
+
+
+
+
+
+// - leer la palabra de izquierda a derecha
+// - comparaban la palabra al reves con la original
+//   - si coinciden las letras de las palabras es palindromo
+//   - sino no es
+
